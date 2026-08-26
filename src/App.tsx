@@ -10,7 +10,7 @@ const slides = [
     focus: "Расслабление",
     description:
       "Помогаем телу отпустить накопившееся напряжение и вернуть ощущение спокойствия, лёгкости и отдыха.",
-    image: "/images/alpro-master-01.webp",
+    image: `${import.meta.env.BASE_URL}images/alpro-master-01.webp`,
   },
   {
     id: "master-02",
@@ -19,7 +19,7 @@ const slides = [
     focus: "Восстановление",
     description:
       "Бережно работаем с уставшими мышцами после спорта, долгой работы и привычной городской нагрузки.",
-    image: "/images/alpro-master-02.webp",
+    image: `${import.meta.env.BASE_URL}images/alpro-master-02.webp`,
   },
   {
     id: "master-03",
@@ -28,7 +28,7 @@ const slides = [
     focus: "Лёгкость",
     description:
       "Подбираем комфортный ритм массажа, чтобы после процедуры движения ощущались свободнее и приятнее.",
-    image: "/images/alpro-master-03.webp",
+    image: `${import.meta.env.BASE_URL}images/alpro-master-03.webp`,
   },
   {
     id: "master-04",
@@ -37,7 +37,7 @@ const slides = [
     focus: "Забота о себе",
     description:
       "Уделяем внимание лицу, шее, плечам и телу, сохраняя спокойную атмосферу и индивидуальный подход.",
-    image: "/images/alpro-master-04.webp",
+    image: `${import.meta.env.BASE_URL}images/alpro-master-04.webp`,
   },
 ];
 
@@ -133,7 +133,7 @@ export default function Home() {
           <div className="top-zone">
             <header className="brand-row">
               <a className="brand" href="#top" aria-label="Alpro, на начало страницы">
-                <img src="/images/alpro-logo.png" alt="ALPRO, студия массажа" />
+                <img src={`${import.meta.env.BASE_URL}images/alpro-logo.png`} alt="ALPRO, студия массажа" />
               </a>
               <p className="location">
                 <span className="location-wide">Москва, </span>Лобачевского 118к4
@@ -248,7 +248,7 @@ export default function Home() {
             <p>07 / 07</p>
             <div className="closing-brand">
               <p>Финальное действие</p>
-              <img src="/images/alpro-logo.png" alt="ALPRO, студия массажа" />
+              <img src={`${import.meta.env.BASE_URL}images/alpro-logo.png`} alt="ALPRO, студия массажа" />
             </div>
           </div>
           <div className="closing-copy">
